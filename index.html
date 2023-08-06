@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foot Website</title>
+    <!-- link bootstrap  -->
+    <link
+      href="bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- logo in title  -->
+    <link rel="shortcut icon" href="logo.jpg" />
+  </head>
+  <body>
+    <header class="content">
+      <div class="row">
+        <div id="menu" class="col-lg-2">
+          <div class="title d-flex justify-content-center align-items-center">
+            <img src="images/foodie hunter.png" alt="Logo" />
+          </div>
+          <div class="menu-items d-none d-md-inline">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Your Orders</a>
+            <a href="#">Wishlists</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+            <a href="#">Checkout</a>
+          </div>
+        </div>
+
+        <div id="foot-container" class="col-lg-8">
+          <div id="header" class="p-3 p-lg-5">
+            <div class="add-box">
+              <i class="fa fa-map-marker your-address" id="add-address">
+                <span class="d-none d-md-inline">Your Address</span></i
+              >
+            </div>
+            <div class="util">
+              <i class="fa fa-search">
+                <span class="d-none d-md-inline"> Search</span></i
+              >
+              <i class="fa fa-tags">
+                <span class="d-none d-md-inline"> Offers</span></i
+              >
+              <i class="fa fa-cart-plus" id="cart-plus"
+                ><span class="d-none d-md-inline" id="countItems">
+                  0 Items</span
+                ></i
+              >
+            </div>
+          </div>
+
+          <div id="food-items" class="d-food-items">
+            <div class="d-biryani">
+              <hr />
+              <p id="category-name">Biryani</p>
+              <div class="row" id="biryani"></div>
+            </div>
+
+            <div class="d-chicken">
+              <hr />
+              <p id="category-name">Chicken Delicious</p>
+              <div class="row" id="chicken"></div>
+            </div>
+
+            <div class="d-paneer">
+              <hr />
+              <p id="category-name">Paneer Mania</p>
+              <div class="row" id="paneer"></div>
+            </div>
+
+            <div class="d-vegetable">
+              <hr />
+              <p id="category-name">Pure Veg Dishes</p>
+              <div class="row" id="vegetable"></div>
+            </div>
+
+            <div class="d-chinese">
+              <hr />
+              <p id="category-name">Chinese Corner</p>
+              <div class="row" id="chinese"></div>
+            </div>
+
+            <div class="d-south-indian">
+              <hr />
+              <p id="category-name">South Indian</p>
+              <div class="row" id="southIndian"></div>
+            </div>
+          </div>
+
+          <div id="cart-page" class="cart-toggle">
+            <p class="cart-title">Cart Items</p>
+            <table>
+              <thead>
+                <tr>
+                  <td>item</td>
+                  <td>name</td>
+                  <td>Quantity</td>
+                  <td>price</td>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+            <button class="checkOut">CHECKOUT</button>
+          </div>
+        </div>
+
+        <div id="cart" class="col-lg-2">
+          <div class="taste-header">
+            <div class="user">
+              <i class="fa-solid fa-user"> Acount</i>
+            </div>
+          </div>
+          <div id="category-list">
+            <p class="item-menu">Go For Hunt</p>
+            <div class="border"></div>
+          </div>
+
+          <div id="checkout">
+            <p id="total-item">Total Item : <span>1</span></p>
+            <p id="total-price">Total Price : $ <span>15</span></p>
+            <p id="delievery">Free delievery on $ <span>40</span></p>
+            <button>CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
